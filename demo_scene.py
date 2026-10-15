@@ -39,6 +39,6 @@ def build_scene(aspect_ratio: float) -> Scene:
         transform=Transform(position=glm.vec3(0, -2, 0), scale=glm.vec3(8, 1, 8)),
         material=Material.from_rgb255(200, 200, 200, base_color_map=f"{TEXTURES}/tiles_base.png",
                                       normal_map=f"{TEXTURES}/tiles_normal.png",
-                                      uv_scale=16.0, shininess=48.0),
+                                      uv_scale=4.0, shininess=48.0),
     ))
     return scene

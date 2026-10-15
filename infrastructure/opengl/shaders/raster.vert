@@ -21,5 +21,5 @@ void main() {
     v_normal = u_normal_matrix * in_normal;
     v_tangent = mat3(u_model) * in_tangent;
     v_uv = in_uv * u_uv_scale;
-    gl_Position = u_view_projection * u_model * vec4(in_position, 1.0);
+    gl_Position = u_view_projection * world_position;
 }
